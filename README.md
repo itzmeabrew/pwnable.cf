@@ -6,7 +6,7 @@ Source code for Website Hacking held at Kottayam as part of Nakshatra 2018, Tech
 
  ### How to
  * Clone the repository using ``` git clone https://github.com/thisisjustinm/crypto-game.git ```
- * If using Wamp, place it into /wamp/www.
- * If using Xammp, place it into /xamppp/htdocs.
+ * If using Wamp, place it into /wamp/www/.
+ * If using Xammp, place it into /xamppp/htdocs/.
  * Make the rquired changes in ```index.html``` file.
  * Start the server. Open a browser and type in ```localhost```.
