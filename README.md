@@ -9,4 +9,4 @@ Source code for Website Hacking held at Kottayam as part of Nakshatra 2018, Tech
  * Make the rquired changes in ```index.html``` file.
  
  
- Game hosted here at [Crypto-Game](https://wh-crypto-game.000webhostapp.com/odin/index.html).
+ Game hosted here at [Crypto-Game](https://wh-crypto-game.000webhostapp.com/odin/index.html). (The site you visit may be shown as dangerous, but I assure you it is not.)
