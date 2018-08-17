@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,7500790183,5310607145 initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+    <link rel="icon" href="wn.png" type="image/png" sizes="16x16">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Pwnable</title>
+    <link href="hacker.css" rel="stylesheet">
+
+    <style> 
+    .tall-row {
+        margin-top: 40px;
+    }
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+    </style>
+</head>
+   <!--<a href="https://github.com/thisisjustinm/crypto-game"><img style="position: absolute; top: 0; left: 0; border: 0;z-index:1001;" src="fork.png" alt="Fork me on GitHub"></a>-->
+<nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://pwnable.cf">&nbsp&nbsp&nbspPwnable.cf</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CLICK ME!!!<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                           <li><a href="http://pwnable.cf/">Home</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://pwnable.cf/basic/1/">Basic</a></li>
+                            <li><a href="http://pwnable.cf/crypto/1/">Crypto</a></li>
+                            <li><a href="http://pwnable.cf/stego/1/">Stego</a></li>
+                            <li><a href="http://pwnable.cf/intermediate/1/">Intermediate</a></li>
+                            <li class="divider"></li>
+                            
+                            <li><a href="https://github.com/thisisjustinm/crypto-game/issues">Raise issue</a></li>
+                            <li><a href="#">Send ideas</a></li>
+                            <li><a href="http://pwnable.cf/licenses.html #contact">Contact</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://pwnable.cf/licenses.html #license">License</a></li>
+                            <li><a href="http://pwnable.cf/licenses.html #disclaimer">Disclaimer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">RULES<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>* All kinds of DoS activities are forbidden.</li>
+                            <li class="divider"></li>
+                            <li>* If you find any unintended bug or system deficiency, please report to the admin. You will be thanked and get some credit.</li>
+                            <li class="divider"></li>
+                            <li>* Do not upload malicious scripts or anything to the website.</li>
+                        </ul>
+                    </li>
+                </ul>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+       
+<body>
+<div class="container">
+    
+    <div class="legend">
+<div id="license">
+    <div class="well" style="top:0;right:0;left:0;bottom:0;margin:auto;">
+                    <form class="form-horizontal" method="POST" action="process.php">
+                        <fieldset>
+                            <legend>License- Pwnable.cf</legend>
+                            <span class="help-block">
+
+The MIT License (MIT)
+
+Copyright (c) 2018 Justin Mathew
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+                        </fieldset>
+                    </form> </div></div>
+</div>
+
+<br><br>
+<div class="well" style="top:0;right:0;left:0;bottom:0;margin:auto;">
+                   
+                        <fieldset>
+                            <legend>License- Hacker Bootstrap</legend>
+                            <span class="help-block">
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Tobin Brown
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+                        </fieldset>
+                    </form> </div></div>
+</div>
+
+
+
+</div>
+
+
+
+<br><br><br>
+<div id="contact"><div class="well" style="top:0;right:0;left:0;bottom:0;margin:auto;">
+                   
+                        <fieldset>
+                            <legend>Contact</legend>
+                            <span class="help-block">
+Contact me via KeyBase(<a href="https://keybase.io/thisisjustinm">thisisjustinm</a>) or send a mail to admin@pwnable.cf.
+                        </fieldset>
+                    </form> </div></div>
+</div>
+<br><br>
+<div id="disclaimer"><div class="well" style="top:0;right:0;left:0;bottom:0;margin:auto;">
+                   
+                        <fieldset>
+                            <legend>Disclaimer</legend>
+                            <span class="help-block">The owner of this site does not accept responsibility for the actions of any users of this site. Users are solely responsible for any content that they place on this site. This site does not encourage or condone any illegal activity, or attempts to hack into any network where they do not have authority to do so.<br><br>1. Pwnable.cf is a non-commercial website.<br>
+2. The contents and services provided by pwnable.cf is absolutly free to individuals for non-commercial use, however it is prohibited from being utilized in commercial manner.<br>
+3. Never use pwnable.cf's resources or information learned from pwnable.cf for illegal purpose.</span>
+                            
+                        </fieldset>
+                    </form> </div></div>
+</div></div><br><br>
+
+
+</div>
+
+
+
+   
+
+
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
