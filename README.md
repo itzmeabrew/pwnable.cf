@@ -1,7 +1,6 @@
 ## Pwnable.cf
 
-Inspired by HackThisSite and HackThis, this is something I designed, for playing around and learning basics of hacking, cryptography
-and steganography.
+Inspired by op011 and 3301 , this is a puzzle/game I designed, for playing around and learning basics of web, cryptography and steganography.
 
 People interested in working on this project, contact me at admin@pwnable.cf .
 
