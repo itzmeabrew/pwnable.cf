@@ -12,3 +12,7 @@ CSS theme used is HackerBootstrap by Tobin Brown (/brobin) .
 - [x] Create a basic layout.
 - [x] Create chat forum.(Added IRC)
 - [ ] Add more levels.
+
+## License
+
+MIT
