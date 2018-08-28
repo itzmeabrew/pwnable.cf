@@ -11,7 +11,7 @@ CSS theme used is HackerBootstrap by Tobin Brown (/brobin) .
 - [x] Get domain and host.
 - [x] Create a basic layout.
 - [x] Create chat forum.(Added IRC)
-- [ ] Add more levels.
+- [x] Add more levels.
 
 ## License
 
