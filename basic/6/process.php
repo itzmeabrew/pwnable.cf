@@ -5,7 +5,8 @@ $p = $_POST['pass'];
 
 
 if ($u == 'resu' && $p == 'ssap') {
-	header('location:http://pwnable.cf/basic/complete.html');
+	setcookie("b6");
+	header('location:http://pwnable.cf/basic/7/');
 }
 else {
 	header('location:http://pwnable.cf/basic/6/');

@@ -5,7 +5,7 @@ $u = $_POST['pass'];
 
 
 if ($u == '36pymcn24' ) 
-{
+{	setcookie("i8");
 	header('location:http://pwnable.cf/intermediate/complete.html');
 }
 else if ($u == 'c12h22o11' )

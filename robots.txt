@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+Disallow: /cert/cert.php
+Disallow: /cert/cert.html
+Disallow: /irc.html
+Disallow: /*.php
+Disallow: /basic/9/passw.txt

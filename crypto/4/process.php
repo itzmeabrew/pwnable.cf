@@ -3,7 +3,8 @@
 $u = $_POST['pass'];
 
 if ($u == 'desktop') {
-	header('location:http://pwnable.cf/crypto/complete.html');
+	setcookie("c4");
+	header('location:http://pwnable.cf/crypto/5/');
 	
 }
 else {

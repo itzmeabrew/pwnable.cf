@@ -1,0 +1,61 @@
+<h2>Creating a versioning system</h2>
+<p>Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.Version Control System allows us to keep track of code, view,maintain and switch between different versions of the code. Benefits of version control systems. Developing software without using version control is risky, like not having backups. Version control can also enable developers to move faster and it allows software teams to preserve efficiency and agility as the team scales to include more developers.</p>
+<hr>
+<h4>Actions to be implemented:</h4>
+<ul>
+<li><strong>Important</strong>: <code>create, commit, delete, log, checkout</code></li>
+<li><strong>Optional</strong>:  <code>status, edit, rename, move, diff, revert, branch, merge, resolve, lock</code></li>
+</ul>
+<h4>Types:</h4>
+<ul>
+<li>Centralised (we'll go with this for the time being)</li>
+<li>Distributed: ArX, Bitkeeper, DCVS, Git, Mercurial, Veracity, Subversion (refer if needed)</li>
+</ul>
+<blockquote>
+<p><strong>IMPORTANT : Read the Git Parable</strong></p>
+</blockquote>
+<hr>
+<h4>How to:</h4>
+<p>First, we need a repository and a working directory(here we will keep our current code)
+Repo : Named .repo, this will be a hidden directory, which will contain all the files.</p>
+<p>First, initialise the directory, using some command init.sh &lt;repo_name&gt;</p>
+<p>Requirements:</p>
+<ul>
+<li>Single argument(repo_name); exit with error if false</li>
+<li>Check if the target is an existing file, if not, create a directory &lt;repo_name&gt;; exit with error if false
+<ul>
+<li>If target folder contains .repo, exit with error</li>
+<li>If the above conditions are met, create the repo, with
+<ul>
+<li>.repo folder inside it</li>
+<li>tags folder inside .repo</li>
+<li>snapshots folder inside .repo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Now, for commit, check that we are inside the repo</p>
+<ul>
+<li>
+<p>Error if false</p>
+</li>
+<li>
+<p>If true, copy the working files(except .repo), to the .repo/snapshots/<number> where number will be the ith no. of files</number></p>
+<pre><code>.repo/snapshots/1 will be the first commit, .repo/snapshots/2 will be the second commit and so on.
+</code></pre>
+</li>
+<li>
+<p>Create a file called .commit inside .repo, which should include username, time and message of the person who made the commit</p>
+</li>
+</ul>
+<p>For log, create a log.sh file, which will store all the data about each commit(commit number,username,time,message)</p>
+<p>If possible, include a .ignore file, which will ignore files that are not to be commited.</p>
+<hr>
+<h4>Examples</h4>
+<p>For examples: refer source code from:</p>
+<ul>
+<li><a href="https://github.com/padcom/pico" target="_blank">Pico</a> (Implemented in Groovy)</li>
+<li><a href="https://github.com/pythongiant/tick" target="_blank">Tick</a> (Implemented in Python)</li>
+<li><a href="https://github.com/MSathieu/SimpleVCS" target="_blank">SimpleVCS</a> (Implemented in Go lang)</li>
+</ul>

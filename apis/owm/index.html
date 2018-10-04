@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pwnable</title>
+  <link rel="stylesheet" type="text/css" href="hacker.css">
+</head>
+<nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://pwnable.cf/">&nbsp&nbspPwnable.cf</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                   
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+<body >
+  <div class="container">
+
+    <div class="well" style="top:0;right:0;left:0;bottom:0;margin:auto;">
+                    <form class="form-horizontal" method="POST">
+                        <fieldset>
+                            <legend>Get weather</legend>                          
+                            <div class="form-group">
+                                <label for="inputUser" class="col-lg-2 control-label">City:</label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" style="text-transform: lowercase;" name="city" id="city" autocomplete="off" placeholder="Enter a city name" type="text">
+                                </div>
+                            </div><br>
+
+
+                        <div id="profile">
+                                      
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+  </div> 
+  <div id="repo">
+      
+
+  </div>
+
+           
+  </div></div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	let appid = '8d3256b172a54308ddced801dbf66158';
+
+	$(document).ready(function(){
+	console.log('ready');
+	$('#city').on('keyup',function(e){
+		let city = e.target.value;
+		$.ajax({
+			url : 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+appid+'&units=metric'
+		}).done(function(u){
+			console.log(u);
+			$('#profile').html(`
+				<div class="col-md-15">
+
+                <div class="panel panel-primary" >
+                    <div class="panel-heading"><h3 class="panel-title">
+                    ${u.name}, ${u.sys.country}(Lon:${u.coord.lon} ,Lat: ${u.coord.lat})
+                    </h3></div>
+                    <div class="panel-body">
+<div class="col-md-3">
+                        <img src="http://openweathermap.org/img/w/${u.weather[0].icon}.png" class="" style="width:100%;">
+                        </div> <br>Description: ${u.weather[0].main},${u.weather[0].description}
+                    <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-striped table-hover ">
+                    <tbody>
+                        
+                            <tr>
+                            
+                            <td>Temperature: ${u.main.temp}&degC (Min:${u.main.temp_min}, Max:${u.main.temp_max})</td>
+                            
+                            <td>Pressure: ${u.main.pressure} hPa</td>
+                            <td>Humidity: ${u.main.humidity}%</td>
+                           <td>Wind Speed: ${u.wind.speed}%</td>
+                            <td>Cloudiness: ${u.clouds.all}%</td>
+                           
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+                        
+                        
+                        <div class="col-md-9">
+                         
+                        </div>
+                        <div class="col-md-9">
+                           
+                        </div>
+                        
+                        <div class="col-md-6">
+                          
+                        </div>
+                         <div class="col-md-4">
+                         
+                        </div>
+                        <div class="col-md-6">
+                         
+                        </div>
+                        
+                        <div class="col-md-6">
+                        &nbsp&nbsp&nbsp 
+                        </div>
+                        <div class="col-md-12">
+                        All weather data taken from OpenWeatherMap
+                        </div>		
+                       
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+				<h3></h3>
+				 
+				<br><br>
+				
+				<br>
+				
+				<br>
+				
+
+
+				`);
+		});
+	});
+	});
+  	
+
+  </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
