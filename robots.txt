@@ -8,3 +8,9 @@ Disallow: /cert/cert.html
 Disallow: /irc.html
 Disallow: /*.php
 Disallow: /basic/9/passw.txt
+............
+Disallow: /cert/certs.php
+Disallow: /cert/certarc.html
+Disallow: /irc45.html
+Disallow: /*.php
+Disallow: /basic/9/passw56.txt
